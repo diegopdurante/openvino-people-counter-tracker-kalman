@@ -1,0 +1,1 @@
+python main.py -i resources/Pedestrian_Detect_2_1_1.mp4 -m model/mobilenet-ssd/mobilenet_iter_73000.xml -d CPU -pt 0.65 --wait_ms 60 --class_to_detect 15 | ffmpeg -v warning -f rawvideo -pixel_format bgr24 -video_size 768x432 -framerate 24 -i - http://0.0.0.0:3004/fac.ffm 
