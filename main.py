@@ -33,7 +33,7 @@ from argparse import ArgumentParser
 from inference import Network
 
 import numpy as np
-from objecttrackerkalman.objecttracker import ObjectTracker
+from objecttracker import ObjectTracker
 
 from image_helpers import send_to_stdout, make_input_blob, input_is_image, add_info_to_image, process_output, get_video_capture
 
